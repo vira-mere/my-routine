@@ -29,7 +29,7 @@ const toggleTaskComplete = (routineId, taskId) => {
         ? {
             ...routine,
             tasks: routine.tasks.map(task =>
-              task.id === taskId
+              (task.id ?? task.taskId) === taskId
                 ? { ...task, completed: !task.completed }
                 : task
             )
