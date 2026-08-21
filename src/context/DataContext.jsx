@@ -22,6 +22,22 @@ export function DataProvider({ children }) {
   const deleteRoutine = (id) => {
     setRoutines(routines.filter(r => r.id !== id))
   }
+const toggleTaskComplete = (routineId, taskId) => {
+  setRoutines(
+    routines.map(routine =>
+      routine.id === routineId
+        ? {
+            ...routine,
+            tasks: routine.tasks.map(task =>
+              task.taskId === taskId
+                ? { ...task, completed: !task.completed }
+                : task
+            )
+          }
+        : routine
+    )
+  )
+}
 
   const addExercise = (exercise) => {
     setExercises([...exercises, { ...exercise, id: Date.now() }])
