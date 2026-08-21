@@ -23,13 +23,13 @@ export function DataProvider({ children }) {
     setRoutines(routines.filter(r => r.id !== id))
   }
 const toggleTaskComplete = (routineId, taskId) => {
-  setRoutines(
-    routines.map(routine =>
+  setRoutines(prevRoutines =>
+    prevRoutines.map(routine =>
       routine.id === routineId
         ? {
             ...routine,
             tasks: routine.tasks.map(task =>
-              (task.id ?? task.taskId) === taskId
+              task.id === taskId
                 ? { ...task, completed: !task.completed }
                 : task
             )
