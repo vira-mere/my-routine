@@ -70,7 +70,11 @@ export default function Home({ setActivePage }) {
           <h2 className="text-lg font-bold text-gray-900 mb-4">Quick Add</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <button
-  onClick={() => setActivePage('routines')}
+  <button
+  onClick={() => setActivePage('exercise')}
+  className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
+  style={{ backgroundColor: `${theme.primary}10` }}
+>
   className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
   style={{ backgroundColor: `${theme.primary}10` }}
 >
