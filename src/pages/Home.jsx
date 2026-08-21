@@ -71,11 +71,8 @@ export default function Home({ setActivePage }) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <button
   onClick={() => setActivePage('exercise')}
-  className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
-  style={{ backgroundColor: `${theme.primary}10` }}
->
-  className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
-  style={{ backgroundColor: `${theme.primary}10` }}
+className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
+style={{ backgroundColor: `${theme.primary}10` }}
 >
               <div className="text-2xl mb-2">🌅</div>
               <p className="text-sm font-medium text-gray-700">Routine</p>
@@ -83,7 +80,8 @@ export default function Home({ setActivePage }) {
             <button className="p-4 rounded-xl text-center hover:shadow-md smooth-transition" 
               style={{ backgroundColor: `${theme.primary}10` }}>
               <div className="text-2xl mb-2">💪</div>
-              <p className="text-sm font-medium text-gray-700">Exercise</p>        
+              <p className="text-sm font-medium text-gray-700">Exercise</p>
+            </button>        
             <button className="p-4 rounded-xl text-center hover:shadow-md smooth-transition" 
               style={{ backgroundColor: `${theme.primary}10` }}>
               <div className="text-2xl mb-2">📚</div>
