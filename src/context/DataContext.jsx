@@ -110,6 +110,7 @@ const toggleTaskComplete = (routineId, taskId) => {
       addRoutine,
       updateRoutine,
       deleteRoutine,
+      toggleTaskConplete,
       exercises,
       addExercise,
       updateExercise,
