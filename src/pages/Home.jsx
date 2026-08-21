@@ -34,8 +34,8 @@ export default function Home({ setActivePage }) {
   <div
     className="min-h-screen p-4 md:p-8 max-w-6xl mx-auto bg-cover bg-center bg-fixed"
     style={{
-      backgroundImage: `url(${theme.wallpaper})`,
-    }}
+  background: theme.wallpaper,
+}}
   >
       {/* Header */}
       <div className="mb-8 animate-fade-in">
