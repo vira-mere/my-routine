@@ -31,7 +31,12 @@ export default function Home({ setActivePage }) {
   const progressPercentage = todayTasks.length > 0 ? (completedCount / todayTasks.length) * 100 : 0
 
   return (
-    <div className="p-4 md:p-8 max-w-6xl mx-auto">
+  <div
+    className="min-h-screen p-4 md:p-8 max-w-6xl mx-auto bg-cover bg-center bg-fixed"
+    style={{
+      backgroundImage: `url(${theme.wallpaper})`,
+    }}
+  >
       {/* Header */}
       <div className="mb-8 animate-fade-in">
         <p className="text-gray-600 text-sm md:text-base">{format(new Date(), 'EEEE, MMMM d, yyyy')}</p>
