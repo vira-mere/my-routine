@@ -34,7 +34,9 @@ export default function Home({ setActivePage }) {
   <div
     className="min-h-screen p-4 md:p-8 max-w-6xl mx-auto bg-cover bg-center bg-fixed"
     style={{
-  background: theme.wallpaper,
+  backgroundImage: theme.wallpaper,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
 }}
   >
       {/* Header */}
