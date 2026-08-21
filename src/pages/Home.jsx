@@ -8,7 +8,7 @@ import { useTheme } from '../context/ThemeContext'
 import { format } from 'date-fns'
 
 export default function Home({ setActivePage }) {
-  const { routines, habits } = useData()
+  const { routines, habits,toggleTaskComplete } = useData()
   const { theme } = useTheme()
   const [todayTasks, setTodayTasks] = useState([])
   const [completedCount, setCompletedCount] = useState(0)
