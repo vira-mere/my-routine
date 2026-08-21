@@ -1,8 +1,10 @@
 {
   "name": "my-routine",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "A beautiful personal routine organizer web app",
+  "author": "vira-mere",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
