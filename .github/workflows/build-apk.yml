@@ -29,7 +29,10 @@ jobs:
     - name: Build web app
       run: npm run build
 
-    - name: Setup Capacitor
+    - name: Add Capacitor Android Platform
+      run: npx cap add android --web-dir=dist || true
+
+    - name: Sync Capacitor
       run: npx cap sync android
 
     - name: Set up JDK 17
