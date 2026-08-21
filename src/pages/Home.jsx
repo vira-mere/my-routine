@@ -69,8 +69,11 @@ export default function Home({ setActivePage }) {
         <Card className="lg:col-span-2">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Quick Add</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <button className="p-4 rounded-xl text-center hover:shadow-md smooth-transition" 
-              style={{ backgroundColor: `${theme.primary}10` }}>
+            <button
+  onClick={() => setActivePage('routines')}
+  className="p-4 rounded-xl text-center hover:shadow-md smooth-transition"
+  style={{ backgroundColor: `${theme.primary}10` }}
+>
               <div className="text-2xl mb-2">🌅</div>
               <p className="text-sm font-medium text-gray-700">Routine</p>
             </button>
