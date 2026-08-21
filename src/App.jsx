@@ -18,7 +18,7 @@ export default function App() {
   const renderPage = () => {
     switch (activePage) {
       case 'home':
-        return <Home />
+    return <Home setActivePage={setActivePage} />
       case 'routines':
         return <Routines />
       case 'exercise':
