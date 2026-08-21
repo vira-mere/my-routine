@@ -7,7 +7,7 @@ import { useData } from '../context/DataContext'
 import { useTheme } from '../context/ThemeContext'
 import { format } from 'date-fns'
 
-export default function Home() {
+export default function Home({ setActivePage }) {
   const { routines, habits } = useData()
   const { theme } = useTheme()
   const [todayTasks, setTodayTasks] = useState([])
