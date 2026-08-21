@@ -151,9 +151,15 @@ export default function Routines() {
                 <div className="border-t border-gray-100 p-4 bg-gray-50 space-y-3">
                   {routine.tasks.map(task => (
                     <div key={task.id} className="flex items-start gap-3 p-3 bg-white rounded-lg border border-gray-100">
-                      <input type="checkbox" className="mt-1 w-4 h-4 rounded" 
-                        style={{ accentColor: theme.primary }}
-                      />
+                      <input
+  type="checkbox"
+  checked={task.completed || false}
+  onChange={() =>
+    toggleTaskComplete(routine.id, task.id)
+  }
+  className="mt-1 w-4 h-4 rounded"
+  style={{ accentColor: theme.primary }}
+/>
                       <div className="flex-1">
                         <p className="font-medium text-gray-900">{task.title}</p>
                         <p className="text-sm text-gray-600 mt-1">{task.time} {task.notes && `• ${task.notes}`}</p>
