@@ -30,7 +30,7 @@ jobs:
       run: npm run build
 
     - name: Add Capacitor Android Platform
-      run: npx cap add android --web-dir=dist || true
+      run: npx cap add android --web-dir=dist
 
     - name: Sync Capacitor with Android
       run: npx cap sync android
