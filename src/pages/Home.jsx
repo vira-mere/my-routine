@@ -122,15 +122,7 @@ export default function Home({ setActivePage }) {
                 <input
                   type="checkbox"
                   checked={task.completed || false}
-onChange={() => {
-  setTodayTasks(prev =>
-    prev.map(t =>
-      t.taskId === task.taskId
-        ? { ...t, completed: !t.completed }
-        : t
-    )
-  )
-}}
+onChange={() => toggleTaskComplete(task.routineId, task.taskId)}
                   className="mt-1 w-5 h-5 rounded cursor-pointer"
                   style={{ accentColor: theme.primary }}
                 />
