@@ -7,7 +7,13 @@ import { useData } from '../context/DataContext'
 import { useTheme } from '../context/ThemeContext'
 
 export default function Routines() {
-  const { routines, updateRoutine, deleteRoutine, addRoutine } = useData()
+  const {
+  routines,
+  addRoutine,
+  updateRoutine,
+  deleteRoutine,
+  toggleTaskComplete
+} = useData()
   const { theme } = useTheme()
   const [expandedRoutine, setExpandedRoutine] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
