@@ -122,7 +122,7 @@ export default function Home({ setActivePage }) {
                 <input
                   type="checkbox"
                   checked={task.completed || false}
-onChange={() => toggleTaskComplete(task.routineId, task.taskId)}
+onChange={() => toggleTaskComplete(task.routineId, task.id)}
                   className="mt-1 w-5 h-5 rounded cursor-pointer"
                   style={{ accentColor: theme.primary }}
                 />
